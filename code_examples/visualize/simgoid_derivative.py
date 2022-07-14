@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def sigmoid(x):
-    return 1/(1 + np.exp(-x))
+def sigmoid(z):
+    return np.exp(-z)/(1 + np.exp(-z))**2
 
 x = np.linspace(-8, 8)
 y = sigmoid(x)
